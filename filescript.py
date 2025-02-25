@@ -29,7 +29,7 @@ def copy_and_delete(file_path, password=None):
 
     # Function to delete the file after one hour
     def delete_file():
-        time.sleep(10)  # Wait for one hour
+        time.sleep(3600)  # Wait for one hour
         if os.path.exists(destination_path):
             os.remove(destination_path)
             print(f"File deleted after one hour.")
